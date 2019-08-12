@@ -14,11 +14,18 @@ namespace BowlingKata.Tests
             game.ShouldNotBeNull();
         }
         [Fact]
-        public void ShouldRollOnePin()
+        public void ShouldHaveScoreOfOne()
         {
             var game = new BowlingGame();
             game.Roll(1);
             game.Score().ShouldBe(1);
+        }
+        [Fact]
+        public void ShouldHaveScoreOfThree()
+        {
+            var game = new BowlingGame();
+            game.Roll(3);
+            game.Score().ShouldBe(3);
         }
     }
 }
