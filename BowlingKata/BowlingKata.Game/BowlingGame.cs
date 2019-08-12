@@ -6,12 +6,13 @@ namespace BowlingKata.Game
     {
         public void Roll(int pins) 
         {
-
+            
         }
 
         public int Score() 
         {
-            return -1;
+            return 1;
         }
     }
 }
+
